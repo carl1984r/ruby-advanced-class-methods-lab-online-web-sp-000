@@ -43,6 +43,8 @@ class Song
   def self.new_from_filename(arg)
     var = arg.split(%r{\W\-\W|.mp3})
     v1 = self.new
+    v1.artist_name = var[0]
+    v1.name = var[1]
   end
 
   def self.create_from_filename(arg)
@@ -50,7 +52,6 @@ class Song
      v1 = self.new
      v1.artist_name = var[0]
      v1.name = var[1]
-
   end
   def self.destroy_all
     self.all.clear
