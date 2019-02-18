@@ -50,6 +50,7 @@ class Song
      v1 = self.new
      v1.name = var[1]
      v1.artist_name = var[0]
+     v1
 
   end
   def self.destroy_all
