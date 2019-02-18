@@ -48,7 +48,6 @@ class Song
   def self.create_from_filename(arg)
     var = arg.split(%r{\W\-\W|.mp3})
      v1 = self.new
-     v1.save
      v1.name = var[1]
 
   end
