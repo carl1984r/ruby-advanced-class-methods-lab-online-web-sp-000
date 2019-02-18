@@ -47,6 +47,7 @@ class Song
 
   def self.create_from_filename(arg)
     var = arg.split(%r{\W\-\W|.mp3})
+    self.new
 
   end
   def self.destroy_all
