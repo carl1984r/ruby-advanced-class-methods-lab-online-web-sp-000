@@ -42,7 +42,7 @@ class Song
 
   def self.new_from_filename(arg)
     var = arg.split(%r{\W\-\W|.mp3})
-    new.tap {|a| a.name = var[1] && a.artist_name = var[0]}
+    v1 = self.new
   end
 
   def self.create_from_filename(arg)
