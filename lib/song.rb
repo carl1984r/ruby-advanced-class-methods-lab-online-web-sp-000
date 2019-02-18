@@ -49,8 +49,7 @@ class Song
     var = arg.split(%r{\W\-\W|.mp3})
      v1 = self.new
      v1.name = var[1]
-     binding.pry
-     v1
+     v1.artist_name = var[0]
 
   end
   def self.destroy_all
