@@ -50,7 +50,7 @@ class Song
      v1 = self.new
      v1.artist_name = var[0]
      binding.pry
-     v1.artist_name = var[0]
+     
 
 
   end
