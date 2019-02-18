@@ -51,9 +51,6 @@ class Song
      v1.artist_name = var[0]
      v1.name = var[1]
      binding.pry
-
-
-
   end
   def self.destroy_all
     self.all.clear
