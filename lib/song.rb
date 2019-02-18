@@ -43,7 +43,7 @@ class Song
   def self.new_from_filename(arg)
     var = arg.split(%r{\W\-\W|.mp3})
     new.tap {|a| a.name = var[1], a.artist_name = var[0]}
-  
+
   end
 
   def self.destroy_all
